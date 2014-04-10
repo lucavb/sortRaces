@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$.get("ajax.php?races=yes", function(data) {
 		var obj = JSON.parse(data);
 		jQuery.each(obj, function(i, val) {
-			var string = "<a href='#' class='race-section list-group-item ";
+			var string = "<a href='#' class='race-section list-group-item ui-state-default ";
 			if (val.publish == 0) {
 				string += 'list-group-item-danger\' data-publish=\'0\'';
 			}
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			
 			$("#race_sort").append(string);
 		});
-		$('.sortable').sortable();
+		$('#race_sort').sortable();
 	});
 
 	$(document).on('click', "a.race-section", function(e) {

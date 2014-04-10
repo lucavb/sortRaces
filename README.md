@@ -6,7 +6,8 @@ Also it allows you to disable certain races by clicking on the them.
 
 ## Installation
 
-please add html5sortable from here http://farhadi.ir/projects/html5sortable/
+I switched to jQuery's UI Sortable implementation since it's more responsive. <br />
+So please add it. For further information see: https://jqueryui.com/sortable/
 also please add jQuery (http://jquery.com/)
 
 ## Running it
